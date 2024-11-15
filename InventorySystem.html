@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory System UI</title>
+    <link rel="icon" type="image/png" href="assets/food/apple.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Scripts -->
+    <script src="js/ItemDetails.js"></script>
+    <script src="js/InventorySystem.js"></script>
+</head>
+
+<body>
+    <div class="inventory-container" aria-label="Inventory Container">
+        <div class="item-information" aria-labelledby="itemInfoLabel">
+            <span id="itemInfoLabel" class="inventory-text">Item Info</span>
+            <div class="item-display" aria-label="Item Display">
+                <div class="display-image" id="displayImage" aria-label="Display Image"></div>
+            </div>
+
+            <div class="item-details" aria-label="Item Details">
+                <div class="item-text">
+                    <span id="itemDescription" class="value" aria-label="Item Description"></span>
+                </div>
+                <div class="item-text">
+                    <span id="itemRarity" class="value" aria-label="Item Rarity"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="items-container" aria-labelledby="inventoryLabel">
+            <span id="inventoryLabel" class="inventory-text">Inventory</span>
+            <div class="items" id="itemsContainer" aria-label="Inventory Items">
+                <!-- Inventory items will be displayed here -->
+            </div>
+        </div>
+
+        <div class="item-tooltip-container" id="tooltipContainer" aria-labelledby="tooltipName tooltipText">
+            <span id="itemName" class="tooltip-name" aria-label="Item Name">Name</span>
+            <span id="itemTooltip" class="tooltip-text" aria-label="Tooltip Description">ToolTip</span>
+        </div>
+    </div>
+</body>
+</html>

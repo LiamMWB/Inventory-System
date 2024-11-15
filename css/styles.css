@@ -1,0 +1,172 @@
+body {
+    background: linear-gradient(135deg, #ffecd2 0%, #9ffcb6 50%, #6bfe83 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.inventory-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d19b72;
+    width: 125vh;
+    height: 70vh;
+    left: 50%;
+    top: 50%;
+    border-radius: 2vh;
+
+    .inventory-text {
+        font-size: 3.5vh;
+        font-weight: bold;
+        color: #57412b;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .item-information {
+        background-color: #f6ca9c;
+        border-radius: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        outline: 1vh #9c754f solid;
+        margin-left: 3%;
+        width: 30%;
+        height: 90%;
+
+        .item-display {
+            background-color: #d39b72;
+            outline: 0.5vh #9c754f solid;
+            border-radius: 2vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 75%;
+            height: 25vh;
+            margin-top: 10%;
+
+            .display-image {
+                width: 80%;
+                height: 80%;
+                background-size: 100% 100%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .item-details {
+            background-color: #d39b72;
+            outline: 0.5vh #9c754f solid;
+            border-radius: 2vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 75%;
+            height: 15vh;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            box-sizing: border-box;
+            padding: 1vh;
+
+            .item-text {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: #4d3925;
+
+                .value {
+                    font-size: 1.75vh;
+                    margin-left: 0.5vh;
+                }
+            }
+        }
+    }
+
+    .items-container {
+        background-color: #f6ca9c;
+        border-radius: 2vh;
+        outline: 1vh #9c754f solid;
+        margin-right: 3%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 60%;
+        height: 90%;
+
+        .items {
+            width: 95%;
+            height: 80%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(5, auto);
+    
+            .inventory-item {
+                position: relative;
+                background-color: #d39b72;
+                outline: 0.5vh #9c754f solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border-radius: 4px;
+                margin: 1vh;
+                box-sizing: border-box;
+
+                &.selected {
+                    outline:  0.5vh #fce251 solid;
+                }
+
+                .item-image {
+                    width: 55%;
+                    height: 62%;
+                    margin-top: 1.5vh;
+                    background-size: 100% 100%;
+                    background-position: center;
+                }
+
+                .item-amount {
+                    position: absolute;
+                    font-size: 2vh;
+                    font-weight: bolder;
+                    color: #332618;
+                    top: 0vh;
+                    left: 0.3vh;
+                    user-select: none;
+                }
+            }
+
+            .inventory-item:hover {
+                background-color: #ffcda7;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .item-tooltip-container {
+        position: absolute;
+        width: 25vh;
+        height: 10vh;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #f6ca9c;
+        outline: 0.5vh #9c754f solid;
+        border-radius: 2vh;
+        box-sizing: border-box;
+        padding: 1vh;
+        color: #4d3925;
+
+        .tooltip-name {
+            font-weight: bold;
+            font-size: 3vh;
+        }
+
+        .tooltip-text {
+            font-size: 1.75vh;
+        }
+    }
+}
