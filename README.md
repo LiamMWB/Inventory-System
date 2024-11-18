@@ -47,6 +47,9 @@ This project is a Inventory System User Interface designed for games or applicat
 1. [Basic Pixel Art Icon Pack for Games](https://b3rries.itch.io/pixel-art-icon-pack)
     - By b3rries
 
+## Preview
+![Inventory Preview](assets/InventoryPreview.png)
+
 ---
 
 Feel free to expand or modify the inventory system to suit your specific needs!
