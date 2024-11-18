@@ -3,6 +3,9 @@
 
 This project is a Inventory System User Interface designed for games or applications that require an intuitive inventory management solution. It includes graphical assets, HTML structure, and TypeScript configurations to create and manage a inventory.
 
+## Preview
+![Inventory Preview](assets/InventoryPreview.png)
+
 ## Features
 
 - **Dynamic Inventory Grid:** Adjustable grid size with rows and columns.
@@ -46,9 +49,6 @@ This project is a Inventory System User Interface designed for games or applicat
 ## Assets Used
 1. [Basic Pixel Art Icon Pack for Games](https://b3rries.itch.io/pixel-art-icon-pack)
     - By b3rries
-
-## Preview
-![Inventory Preview](assets/InventoryPreview.png)
 
 ---
 
